@@ -21,9 +21,10 @@
     color: white;
 }
 
-/* */
+/* Heading: Name */
 #my-name {
-    font-size: 40px;
+    margin-top: 8px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -33,57 +34,89 @@
     font-size: 20px;
 }
 
-#body-h1 {
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    border-bottom: 3px solid rgb(194, 192, 192);
-    display: inline-block;
-}
-
-.project-images {
-    display: flex;
-    justify-content: center; /* Horizontally center the content */
-    height: 100vh; /* Adjust the height to your needs */
-}
-
-.project-title {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-
-/* styles.css */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    border: 1px solid #ccc; /* Add a border around the video player */
-    
-    max-width: 75%; /* Set the image's width to 50% */
-    max-height: 100%; /* Limit the image's height to the container's height */
-    display: block; /* Ensures the image is treated as a block-level element */
-    margin: 0 auto; /* Center the image horizontally using margin */
-    box-shadow: 5px 5px 5px rgba(0,0,0,.40);
-  }
-
+/********************************************************/
+/********************************************************/
 /* Recipes div wrap (black border and biege background) */
-#recipes-home {
+#portfolio {
     background-color: rgb(53, 117, 155);
     color: rgb(60,60,60);
     padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 200px;
     border-top: 1px solid black;
-    border-bottom: 1px solid rgb(180, 103, 103);
 }
 
+/* Heading: Portfolio */
+#portfolio div h1 {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 50px;
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+}
+
+.project-title a {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.project-title a:hover  {
+    color: rgb(241, 122, 66); /* Change the link color on hover */
+}
+
+.project-title a:active  {  
+    color: #383838;               /* Change the link color when clicked */
+    background-color: transparent;  /* Remove any background color when clicked (optional) */
+    outline: none;                  /* Remove the browser's default focus outline (optional) */
+}
+
+.project-image {  
+    display: flex;
+    justify-content: center;        /* Horizontally center the content */
+    width: 100%;                    /* Make the container fill the screen width */
+}
+
+.project-image div {
+    border-bottom: 5px solid rgb(22, 22, 22);
+    padding-bottom: 16px;
+    margin-bottom: 48px;
+}
+
+.project-image img {  
+    max-width: 100%;                 /* Set the image's width to 100% of its container */
+    max-height: 100%;                /* Set the image's height to 100% of its container */
+  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-video {
+    display: flex;
+    justify-content: center;        /* Horizontally center the content */
+    width: 100%;                    /* Make the container fill the screen width */
+}
+
+.project-video div {
+    border-bottom: 5px solid rgb(22, 22, 22);
+    padding-bottom: 16px;
+    margin-bottom: 48px;
+}
+
+.project-video iframe {
+    max-width: 100%;                /* Set the image's width to 100% of its container */
+    max-height: 100%;               /* Set the image's height to 100% of its container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Recipes div wrap (black border and biege background) */
+/********************************************************/
+/********************************************************/
