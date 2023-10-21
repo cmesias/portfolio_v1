@@ -1,166 +1,292 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta lang="en" charset="UTF-8">
-        <title>Portfolio | Carl Mesias</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="home.css">
-    </head>
 
-    <!-- sandwich: https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/ -->
+<head>
+    <meta lang="en" charset="UTF-8">
+    <title>Portfolio | Carl Mesias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="waves.css">
+</head>
 
-    <!-- color pallete: https://colorhunt.co/palette/f9fbe7f0edd4eccdb4fea1a1 -->
-    <body>
+<!-- sandwich: https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/ -->
 
-        <!-- White bg for home button-->
-        <div id="home-btn-bg"></div>
+<!-- color pallete: https://colorhunt.co/palette/f9fbe7f0edd4eccdb4fea1a1 -->
 
+<body>
+
+    <!-- White bg for home button-->
+    <div id="home-btn-bg">
         <!-- First center ONLY the div with flex, justify-content -->
         <!-- Then, inside the anchor just use text-align to center the text -->
         <p id="home">
             <a id="home-btn" href="./index.html">CMESIAS</a>
         </p>
+    </div>
 
-        
-        <!-- Navigation Bar-->
-        <nav>
-            <ul>
+    <!-- Navigation Bar-->
+    <nav>
+        <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="./pages/games.html">Games</a></li>
+            <!-- <li><a href="./pages/games.html">Games</a></li> -->
             <!-- <li><a href="./pages/gfx-assets.html">GFX Assets</a></li> -->
             <!-- <li><a href="./pages/sfx-assets.html">SFX Assets</a></li> -->
             <!-- <li><a href="./pages/music-assets.html">Music Assets</a></li> -->
-            </ul>
-        </nav>
+        </ul>
+    </nav>
 
-        <!-- About Me div-->
-        <div>
-            <div id="about-me">
-                <p id="my-name">CARL MESIAS</p>
-                <p id="my-name-body">Hello!
+    <!-- About Me div-->
+    <div>
+        <div id="about-me">
+            <p id="my-name">CARL MESIAS</p>
+            <p id="my-name-body">Hello!
 
-                    My name is Carl Mesias, I am a self-taught Game Developer with experience in C/C++, C#, Unity, Unreal Engine, Gamemaker, Desktop Game Development, and Mobile Game Development, PSP (PlayStation) Game Development.
-                    
-                    I have a strong passion to create an enjoyable and unique gaming experience.
-                <p>
-                    From a computer science major, to completing my nursing degree, I found my passion for game development when I was 15 years old creating games for the Sony PSP (PlayStation Portable). In pursuit of growing my passion I began building and learning how to create software in C/C++, and eventually branched out to C# with Unity, Blueprint with Unreal Engine and other game engines. 
-                
-                    I continually work on growing my skills to one day prepare myself in the game industry.
-                </p>
-                <p>
-                    In the future, I would love to join a AAA Studio, or founding an Indie Studio filled with passionate gamers and game developers such as myself.
-                    
-                    In my free-time, I’m currently creating YouTube tutorials on how to create your first game. If you are interested in making your first game, send me a dm, I’ll send you a link.
-                    
-                    I’m also working on a game in Unreal Engine, stay tuned.
-                </p>
-                 <p id="snapshot">
-                    Snapshot: C/C++ | C# | SDL2 | Unity | Unreal Engine | Gamemaker | HTML | CSS | JavsScript | Quality Assurance.
-                </p>
+                My name is Carl Mesias, I am a self-taught Game Developer with experience in C/C++, C#, Unity, Unreal
+                Engine, Gamemaker, Desktop Game Development, and Mobile Game Development, PSP (PlayStation) Game
+                Development.
+
+                I have a strong passion to create an enjoyable and unique gaming experience.
+            <p>
+                From a computer science major, to completing my nursing degree, I found my passion for game development
+                when I was 15 years old creating games for the Sony PSP (PlayStation Portable). In pursuit of growing my
+                passion I began building and learning how to create software in C/C++, and eventually branched out to C#
+                with Unity, Blueprint with Unreal Engine and other game engines.
+
+                I continually work on growing my skills to one day prepare myself in the game industry.
+            </p>
+            <p>
+                In the future, I would love to join a AAA Studio, or founding an Indie Studio filled with passionate
+                gamers and game developers such as myself.
+
+                In my free-time, I’m currently creating YouTube tutorials on how to create your first game. If you are
+                interested in making your first game, send me a dm, I’ll send you a link.
+
+                I’m also working on a game in Unreal Engine, stay tuned.
+            </p>
+            <p id="snapshot">
+                Snapshot: C/C++ | C# | SDL2 | Unity | Unreal Engine | Gamemaker | HTML | CSS | JavsScript | Quality
+                Assurance.
+            </p>
+        </div>
+        <div id="portfolio">
+            <div>
+                <h1>PORTFOLIO</h1>
             </div>
-            <div id="portfolio">
-                <div>
-                    <h1>PORTFOLIO</h1>
-                 </div>
 
-                 <!---------------- Projects Start ---------------->
+            <!-- Button -->
+            <div id="view-toggle">
+                <button class="button selected" id="grid-button">Grid View</button>
+                <button class="button" id="list-button">List View</button>
+            </div>
+            <!------------------- Grid Begin ------------------->
+            <div id="grid-view" class="view-mode">
 
-                 <!-- Rogue King -->
-                <div>
-                    <div class="project-video">
-                        <div class="divider">
-                            <div id="project-name">
+                <!-- Body Starts Here -->
+                <div class="main-body">
+                    <div class="grid-container">
+
+                        <div class="grid-item">
+                            <iframe width="480" height="272"
+                                src="https://www.youtube.com/embed/mmJHSaROeiA?si=jTxTPwQAwEyszFHV" frameborder="0"
+                                allowfullscreen></iframe>
+                            <div class="links">
                                 <a href="https://cmesias.itch.io/rogue-king" target="_blank">Rogue King</a>
-                             </div>
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/mmJHSaROeiA?si=jTxTPwQAwEyszFHV" frameborder="0" allowfullscreen></iframe>
+                                <a class="download"
+                                    href="https://github.com/cmesias/RogueKingCPPVS/releases/download/sdl2/RogueKingV3.zip"
+                                    target="_blank">Download</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Javelin Fury -->
-               <div>
-                   <div class="project-video">
-                        <div class="divider">
-                            <div id="project-name">
+                        <div class="grid-item">
+                            <iframe width="480" height="272"
+                                src="https://www.youtube.com/embed/iqHQT0-BKto?si=R5c54ayl0_gqtKAF" frameborder="0"
+                                allowfullscreen></iframe>
+                            <div class="links">
                                 <a href="https://cmesias.itch.io/javelin-fury" target="_blank">Javelin Fury</a>
-                             </div>
-                           <iframe width="640" height="360" src="https://www.youtube.com/embed/iqHQT0-BKto?si=R5c54ayl0_gqtKAF" frameborder="0" allowfullscreen></iframe>
-                       </div>
-                   </div>
-               </div>
-
-                <!-- Don't Lose Breathe -->
-               <div>
-                   <div class="project-video">
-                        <div class="divider">
-                            <div id="project-name">
+                                <a class="download"
+                                    href="https://github.com/cmesias/JavelinFury/releases/download/sdl2/JavelinFury.zip"
+                                    target="_blank">Download</a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <iframe width="480" height="272"
+                                src="https://www.youtube.com/embed/8BQVZq6w_Bg?si=OE1gAeLq1zNYBTTV" frameborder="0"
+                                allowfullscreen></iframe>
+                            <div class="links">
                                 <a href="https://cmesias.itch.io/dontlosebreathe" target="_blank">Don't Lose Breathe</a>
-                             </div>
-                           <iframe width="640" height="360" src="https://www.youtube.com/embed/8BQVZq6w_Bg?si=OE1gAeLq1zNYBTTV" frameborder="0" allowfullscreen></iframe>
-                       </div>
-                   </div>
-               </div>
+                                <a class="download"
+                                    href="https://github.com/cmesias/DontLoseBreathe/releases/download/sdl2/DontLoseBreatheV2.zip"
+                                    target="_blank">Download</a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <iframe width="480" height="272"
+                                src="https://www.youtube.com/embed/Pn7v0pfkgZw?si=LGWLON6WRlR9cPgK" frameborder="0"
+                                allowfullscreen></iframe>
+                            <div class="links">
+                                <a href="https://cmesias.itch.io/fattest-boss-fight-ever" target="_blank">Fattest Boss
+                                    Fight Ever</a>
+                                <a class="download" href="https://cmesias.itch.io/fattest-boss-fight-ever"
+                                    target="_blank">Download</a>
+                            </div>
+                        </div>
 
-                <!-- Fattest Boss Fight Ever -->
-               <div>
-                   <div class="project-video">
-                        <div class="divider">
-                            <div id="project-name">
-                                <a href="https://cmesias.itch.io/fattest-boss-fight-ever" target="_blank">Fattest Boss Fight Ever</a>
-                             </div>
-                           <iframe width="640" height="360" src="https://www.youtube.com/embed/Pn7v0pfkgZw?si=LGWLON6WRlR9cPgK" frameborder="0" allowfullscreen></iframe>
-                       </div>
-                   </div>
-               </div>
-
-                 <!-- Asteroids Clone -->
-                <div>
-                    <div class="project-video">
-                        <div class="divider">
-                            <div id="project-name">
+                        <div class="grid-item">
+                            <iframe width="480" height="272"
+                                src="https://www.youtube.com/embed/tz5SHI-m94w?si=CAkUhcbIGgnkf8Zd" frameborder="0"
+                                allowfullscreen></iframe>
+                            <div class="links">
                                 <a href="https://cmesias.itch.io/asteroids" target="_blank">Asteroids Clone</a>
-                             </div>
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/tz5SHI-m94w?si=CAkUhcbIGgnkf8Zd" frameborder="0" allowfullscreen></iframe>
+                                <a class="download" href="https://cmesias.itch.io/asteroids"
+                                    target="_blank">Download</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                 <!-- Ano Dungeon -->
-                <div>
-                    <div class="project-image">
-                        <div class="divider">
-                            <div id="project-name">
+                        <div class="grid-item">
+                            <a href="https://cmesias.itch.io/anodungeon" target="_blank">
+                                <img width="480" height="272" src="../images/image002.png">
+                            </a>
+                            <div class="links">
                                 <a href="https://cmesias.itch.io/anodungeon" target="_blank">Ano Dungeon</a>
-                             </div>
-                            <img  width="640" height="360" src="./images/image002.png" alt="Ano Dungeon Screenshot">
+                                <a class="download" href="https://cmesias.itch.io/anodungeon"
+                                    target="_blank">Download</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                 <!-- Princess Konoko -->
-                <div>
-                    <div class="project-video">
-                        <div class="divider">
-                            <div id="project-name">
+                        <div class="grid-item">
+                            <iframe width="480" height="272"
+                                src="https://www.youtube.com/embed/g5Xorj-sqZQ?si=pNkccbb70VP3Q4ds" frameborder="0"
+                                allowfullscreen></iframe>
+                            <div class="links">
                                 <a href="https://cmesias.itch.io/princess-konoko" target="_blank">Princess Konoko</a>
-                             </div>
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/g5Xorj-sqZQ?si=pNkccbb70VP3Q4ds" frameborder="0" allowfullscreen></iframe>
+                                <a class="download" href="https://cmesias.itch.io/princess-konoko"
+                                    target="_blank">Download</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Body Ends Here -->
+            </div>
+            <!------------------- Grid End ------------------->
+
+            <!---------------- Projects Start ---------------->
+
+            <div id="list-view" class="view-mode">
+                <div class="main-list-body">
+                    <!-- Rogue King -->
+                    <div>
+                        <div class="project-video">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/rogue-king" target="_blank">Rogue King</a>
+                                </div>
+                                <iframe width="640" height="360"
+                                    src="https://www.youtube.com/embed/mmJHSaROeiA?si=jTxTPwQAwEyszFHV" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Javelin Fury -->
+                    <div>
+                        <div class="project-video">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/javelin-fury" target="_blank">Javelin Fury</a>
+                                </div>
+                                <iframe width="640" height="360"
+                                    src="https://www.youtube.com/embed/iqHQT0-BKto?si=R5c54ayl0_gqtKAF" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Don't Lose Breathe -->
+                    <div>
+                        <div class="project-video">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/dontlosebreathe" target="_blank">Don't Lose
+                                        Breathe</a>
+                                </div>
+                                <iframe width="640" height="360"
+                                    src="https://www.youtube.com/embed/8BQVZq6w_Bg?si=OE1gAeLq1zNYBTTV" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fattest Boss Fight Ever -->
+                    <div>
+                        <div class="project-video">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/fattest-boss-fight-ever" target="_blank">Fattest
+                                        Boss
+                                        Fight Ever</a>
+                                </div>
+                                <iframe width="640" height="360"
+                                    src="https://www.youtube.com/embed/Pn7v0pfkgZw?si=LGWLON6WRlR9cPgK" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Asteroids Clone -->
+                    <div>
+                        <div class="project-video">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/asteroids" target="_blank">Asteroids Clone</a>
+                                </div>
+                                <iframe width="640" height="360"
+                                    src="https://www.youtube.com/embed/tz5SHI-m94w?si=CAkUhcbIGgnkf8Zd" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ano Dungeon -->
+                    <div>
+                        <div class="project-image">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/anodungeon" target="_blank">Ano Dungeon</a>
+                                </div>
+                                <img width="640" height="360" src="./images/image002.png" alt="Ano Dungeon Screenshot">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Princess Konoko -->
+                    <div>
+                        <div class="project-video">
+                            <div class="divider">
+                                <div id="project-name">
+                                    <a href="https://cmesias.itch.io/princess-konoko" target="_blank">Princess
+                                        Konoko</a>
+                                </div>
+                                <iframe width="640" height="360"
+                                    src="https://www.youtube.com/embed/g5Xorj-sqZQ?si=pNkccbb70VP3Q4ds" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!------------------- Projects End ------------------->
-                        
             </div>
+
+            <!------------------- Projects End ------------------->
         </div>
+    </div>
 
-        <div id="links">
+    <div id="links">
 
-        </div>
+    </div>
+    <script src="script.js"></script>
 
-    </body>
+</body>
 
-    <footer id="footer">
-        <p>Copyright @ 2023 by Cmesias</p>
-    </footer>
+<footer id="footer">
+    <p>Copyright @ 2023 by Cmesias</p>
+</footer>
+
 </html>

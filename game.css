@@ -1,9 +1,10 @@
-/* styles.css */
-.grid-container {
+  /* styles.css */
+  .grid-container {
     display: grid;
     gap: 10px;
-    max-width: 80%; /* Make sure the grid doesn't exceed the viewport width */
+    max-width: 100%; /* Make sure the grid doesn't exceed the viewport width */
     margin: 0 auto; /* Center the grid horizontally */
+  
   }
   
   .grid-item {
@@ -29,13 +30,13 @@
   }
 
   .download {
-    color: rgb(22, 22, 22);
+    color: rgb(58, 58, 58)
   }
 
   a {
       font-size: 23px;
       font-weight: bold;
-      color: white;
+      color: rgb(255, 255, 255);
       text-decoration: none; /* Remove the underline from the link */
   }
   
