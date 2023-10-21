@@ -57,57 +57,65 @@
     border-bottom: 2px solid rgb(233, 233, 233);
 }
 
-.project-title {
-    display: flex;
-    justify-content: center;
+
+#project-name {
+    text-decoration: none; /* Remove the underline from the link */
 }
 
-.project-title a {
+#project-name a {
     font-size: 40px;
     font-weight: bold;
     color: white;
     text-decoration: none; /* Remove the underline from the link */
 }
 
-.project-title a:hover  {
+#project-name a:hover  {
     color: rgb(241, 122, 66); /* Change the link color on hover */
 }
 
-.project-title a:active  {  
+#project-name a:active  {  
     color: #383838;               /* Change the link color when clicked */
     background-color: transparent;  /* Remove any background color when clicked (optional) */
     outline: none;                  /* Remove the browser's default focus outline (optional) */
 }
 
+/***************************************************************************/
+/***************************************************************************/
+/*********************************** Images ********************************/
 .project-image {  
     display: flex;
     justify-content: center;        /* Horizontally center the content */
     width: 100%;                    /* Make the container fill the screen width */
 }
 
-.project-image div {
-    border-bottom: 5px solid rgb(22, 22, 22);
+.project-image .divider {
     padding-bottom: 16px;
     margin-bottom: 48px;
+    border-bottom: 5px solid rgb(22, 22, 22);
 }
 
 .project-image img {  
     max-width: 100%;                 /* Set the image's width to 100% of its container */
     max-height: 100%;                /* Set the image's height to 100% of its container */
-  
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+/*********************************** Images ********************************/
+/***************************************************************************/
+/***************************************************************************/
 
+/***************************************************************************/
+/***************************************************************************/
+/*********************************** Videos ********************************/
 .project-video {
     display: flex;
     justify-content: center;        /* Horizontally center the content */
     width: 100%;                    /* Make the container fill the screen width */
 }
 
-.project-video div {
-    border-bottom: 5px solid rgb(22, 22, 22);
+.project-video .divider {
     padding-bottom: 16px;
     margin-bottom: 48px;
+    border-bottom: 5px solid rgb(22, 22, 22);
 }
 
 .project-video iframe {
@@ -115,6 +123,9 @@
     max-height: 100%;               /* Set the image's height to 100% of its container */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+/*********************************** Videos ********************************/
+/***************************************************************************/
+/***************************************************************************/
 
 
 /* Recipes div wrap (black border and biege background) */

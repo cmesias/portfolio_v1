@@ -1,0 +1,65 @@
+/* styles.css */
+.grid-container {
+    display: grid;
+    gap: 10px;
+    max-width: 80%; /* Make sure the grid doesn't exceed the viewport width */
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+  
+  .grid-item {
+    color: white;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  iframe {
+    max-width: 100%;
+    max-height: 225px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+      font-size: 23px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none; /* Remove the underline from the link */
+  }
+  
+  a:hover  {
+      color: rgb(241, 122, 66); /* Change the link color on hover */
+  }
+  
+  a:active  {  
+      color: #383838;               /* Change the link color when clicked */
+      background-color: transparent;  /* Remove any background color when clicked (optional) */
+      outline: none;                  /* Remove the browser's default focus outline (optional) */
+  }
+
+  /* Media queries to adjust the number of columns based on screen width */
+@media (min-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
