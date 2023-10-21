@@ -1,19 +1,6 @@
 
 /*** Applies only to Home Page ***/
 
-/* */
-#about-me {
-    background-color: rgb(71, 144, 187);
-    color: rgb(60,60,60);
-    padding-left: 20%;
-    padding-right: 20%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid rgb(180, 103, 103);
-
-    text-align: center;
-    color: white;
-}
-
 /* Heading: Name */
 #my-name {
     margin-top: 8px;
@@ -25,6 +12,24 @@
 /* */
 #my-name-body {
     font-size: 20px;
+}
+
+/* */
+#about-me {
+    background-color: rgb(27, 101, 145);
+    color: rgb(60,60,60);
+    padding-left: 20%;
+    padding-right: 20%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgb(180, 103, 103);
+
+    text-align: center;
+    color: white;
+}
+
+#snapshot {
+    font-weight: bold;
+    color:rgb(244, 144, 45)
 }
 
 /********************************************************/
