@@ -9,7 +9,13 @@
   .grid-item {
     color: white;
     padding: 20px;
+    background: linear-gradient(to bottom, #94acb6, #94b6b3);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 225px;
   }
   
   iframe {
@@ -22,6 +28,10 @@
     justify-content: space-between;
   }
 
+  .download {
+    color: rgb(22, 22, 22);
+  }
+
   a {
       font-size: 23px;
       font-weight: bold;
@@ -30,11 +40,12 @@
   }
   
   a:hover  {
-      color: rgb(241, 122, 66); /* Change the link color on hover */
+      color: rgb(114, 114, 114);
+      
   }
   
   a:active  {  
-      color: #383838;               /* Change the link color when clicked */
+      color: rgb(56, 56, 56);
       background-color: transparent;  /* Remove any background color when clicked (optional) */
       outline: none;                  /* Remove the browser's default focus outline (optional) */
   }
