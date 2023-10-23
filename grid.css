@@ -1,5 +1,5 @@
-  /* styles.css */
-  .grid-container {
+ /* Grid container */
+ .grid-container {
     display: grid;
     gap: 10px;
     max-width: 100%; /* Make sure the grid doesn't exceed the viewport width */
@@ -7,6 +7,7 @@
   
   }
   
+  /* Grid item */
   .grid-item {
     color: white;
     padding: 20px;
@@ -14,19 +15,27 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
   
+  /* Grid img link */
   img {
     max-width: 100%;
     max-height: 225px;
   }
   
+  /* Grid video link */
   iframe {
     max-width: 100%;
     max-height: 225px;
   }
 
+  /* Grid links */
   .links {
     display: flex;
     justify-content: space-between;
+  }
+
+  /* Tools details */
+  .grid-item div p {
+    color: rgb(0, 0, 0);
   }
 
   .download {
